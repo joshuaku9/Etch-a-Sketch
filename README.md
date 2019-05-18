@@ -1,2 +1,2 @@
 Etch-a-sketch project built using HTML, CSS, and Javascript. 
-Move over a square to color it in
+Hovering the mouse over a square colors it in and the reset button clears the board.

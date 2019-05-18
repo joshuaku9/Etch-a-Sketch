@@ -1,11 +1,15 @@
+#clearBtn{
+    margin-left: 900px;
+    margin-top: 150px;
+    padding: 10px;
+}
+
 .container{
     display: grid;
-    grid-template-columns: 50px 50px 50px 50px 
-    50px 50px 50px 50px;
-    grid-template-rows: 50px 50px 50px 50px 
-    50px 50px 50px 50px;
-    margin-left: 700px;
-    margin-top: 300px;
+    height: 500px;
+    margin: auto;
+    width: 500px;
+    border: 20px solid black;
 }
 
 .box{
@@ -13,4 +17,5 @@
     border-radius: 5px;
     border-style:solid;
 }
+
 

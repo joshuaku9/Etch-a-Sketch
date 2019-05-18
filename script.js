@@ -1,14 +1,14 @@
 
 const container = document.querySelector('.container');
 
-function createGrid(number){
-    for(let i = 0; i < number; ++i){
-        for(let j = 0; j < number; ++j){
-            const grid = document.createElement("div");
-            grid.setAttribute('class','box');
-            container.appendChild(grid);
-        }
+function createGrid(numGrid){
+    for(let i = 0; i < numGrid * numGrid; ++i){
+        let grid = document.createElement("div");
+        grid.setAttribute('class','box');
+        container.appendChild(grid);
     }
+    container.setAttribute('style', 
+        'grid: repeat(' + numGrid + ',auto) / repeat(' + numGrid + ',auto)');
     onHover();
 }
 
@@ -20,7 +20,7 @@ function onHover(){
         })
     })
 }
-createGrid(8);
+createGrid(16);
 onHover();
 const clearButton=document.querySelector('#clearBtn');
 
